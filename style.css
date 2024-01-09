@@ -1,0 +1,124 @@
+
+*{
+     padding: 0;
+     margin: 0;
+     box-sizing: border-box;
+}  
+@font-face {
+    font-family:'paras-color' ;
+    src: url('Assets/Fonts/BungeeSpice-Regular.ttf');
+} 
+html body{
+     width: 100%;
+     height: 100%;
+     background-color: #3498db;
+     padding: 50px;
+} 
+#main{
+     width: 100%;
+     height: 100%;
+     background-color: #3498db;
+     display: flex;
+     flex-wrap: wrap;
+} 
+.note{
+    width: 400px;
+    height: 400px;
+    background-color: #FFF;
+    margin: 15px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+} 
+.note .tool{
+     width: 100%;
+     height: 30px;
+     border-top-right-radius: 10px;
+     border-top-left-radius: 10px;
+     background-color: #000;
+}  
+.icon-flex{
+     width: 90%;
+     height: 100%;
+     display: flex;
+     justify-content: flex-end;
+     gap: 15px;
+     align-items: center;
+}
+.icon{
+     color: #FFF;
+     font-size: 20px;
+} 
+.icon:hover{
+    color: blue;
+    cursor: pointer;
+} 
+.icon:active{
+    color: green;
+} 
+.icon1:hover{
+    color: red;
+    cursor: pointer;
+}  
+.icon1:active{
+     color: green;
+} 
+textarea{
+     width: 100%;
+     height: 93%;
+     border-bottom-left-radius: 10px;
+     border-bottom-right-radius: 10px;
+     outline: none;
+     padding: 15px;
+     font-size: 16px;
+     font-family:'paras-color' ;
+     resize: none;
+} 
+textarea:focus{
+    color:red;
+    background-color:rgb(207, 200, 214);  
+} 
+/* Add button */
+#addBtn{
+     position: fixed;
+     top: 18px;
+     right: 50px;
+     padding: 0.5rem 1rem;
+     border-radius: 10px;
+     -webkit-border-radius: 10px;
+     -moz-border-radius: 10px;
+     -ms-border-radius: 10px;
+     -o-border-radius: 10px;
+     cursor: pointer;
+     outline: none;
+     border: none;
+     font-weight: 600;
+} 
+#addBtn:hover{
+      background-color: rgb(200, 200, 244);
+      color: black;
+} 
+#addBtn:active{
+     background-color: green;
+     color: wheat;
+}
+
+@media (max-width:539px) {
+  
+      #addBtn{
+          top:15px;
+          left: 40px;
+          width: 120px;
+      } 
+}
+@media (max-width:486px) {
+  
+     #addBtn{
+         top:65px;
+         left: 70px;
+         width: 120px;
+     } 
+}
